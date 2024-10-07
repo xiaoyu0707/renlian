@@ -11,6 +11,8 @@ import pyvirtualcam
 # Import OS-specific modules only when necessary
 if platform.system() == 'Darwin':  # macOS
     import AVFoundation
+elif platform.system() == 'Windows' or platform.system() == 'Linux':
+    from pygrabber.dshow_graph import FilterGraph
 
 # Import Windows specific modules only when on windows platform
 if platform.system() == 'Windows' or platform.system() == 'Linux':  # Windows or Linux
