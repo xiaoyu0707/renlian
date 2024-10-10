@@ -146,6 +146,12 @@ You can now use the virtual camera output (uses pyvirtualcam) by turning on the 
 
 Additional command line arguments are given below. To learn out what they do, check [this guide](https://github.com/s0md3v/roop/wiki/Advanced-Options).
 
+### video-quality
+**Default Value: 18**
+The video-quality parameter allows you to control the compression level of the output video. Lower values result in higher quality but larger file sizes, while higher values produce more compression, reducing quality but decreasing file size. This setting affects bitrate and overall visual fidelity, not resolution.
+
+Supported Values: [0 to 51]
+
 
 ```
 options:
